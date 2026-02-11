@@ -9,6 +9,7 @@ function Header() {
 
         <nav className="nav">
           <a href="#products">Products</a>
+          <a href="#demo">Demo</a>
           <a href="#features">Features</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>

@@ -31,11 +31,6 @@ function Features() {
               ))}
             </ul>
           </div>
-          <div className="features-image">
-            <div className="features-image-placeholder">
-              Dashboard Preview
-            </div>
-          </div>
         </div>
       </div>
     </section>

@@ -326,6 +326,155 @@ button {
   font-size: 1.125rem;
 }
 
+/* Audio Demo Section */
+.audio-demo {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #0f2027 0%, #1a3a4a 50%, #1e3a5f 100%);
+}
+
+.audio-demo .section-header h2 {
+  color: #ffffff;
+}
+
+.audio-demo .section-header p {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.audio-player-card {
+  max-width: 640px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.3);
+}
+
+.audio-call-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.audio-call-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.audio-call-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: background 0.3s;
+}
+
+.audio-call-dot.active {
+  background: #48bb78;
+  box-shadow: 0 0 8px rgba(72, 187, 120, 0.6);
+  animation: pulse-dot 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.audio-call-duration {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.875rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.audio-waveform {
+  cursor: pointer;
+  padding: 16px 0;
+  margin-bottom: 8px;
+}
+
+.audio-waveform-bars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  height: 36px;
+  margin-bottom: 12px;
+}
+
+.audio-bar {
+  width: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  transition: height 0.15s ease, background 0.15s ease;
+}
+
+.audio-progress-track {
+  height: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.audio-progress-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.audio-play-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 4px 16px rgba(49, 130, 206, 0.4);
+}
+
+.audio-play-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(49, 130, 206, 0.6);
+  background: #2b6cb0;
+}
+
+.audio-call-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.audio-call-label {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.audio-call-meta {
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.8rem;
+}
+
 /* CTA Section */
 .cta {
   background: var(--primary);
@@ -347,6 +496,59 @@ button {
 
 .cta .btn-primary {
   background: white;
+  color: var(--primary);
+}
+
+/* Contact Section */
+.contact {
+  padding: 100px 0;
+  background: var(--bg-light);
+}
+
+.contact-info-centered {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-info-block h3 {
+  font-size: 1.25rem;
+  color: var(--text-dark);
+  margin-bottom: 12px;
+}
+
+.contact-info-block p {
+  color: var(--text-medium);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.contact-details {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-medium);
+}
+
+.contact-details li svg {
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.contact-details a {
+  color: var(--accent);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.contact-details a:hover {
   color: var(--primary);
 }
 
