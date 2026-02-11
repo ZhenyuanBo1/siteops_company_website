@@ -7,10 +7,10 @@ function Hero() {
           Streamline your business with AI-powered communication,
           intelligent analytics, and comprehensive site management tools.
         </p>
-        <div className="hero-buttons">
+        {/* <div className="hero-buttons">
           <button className="btn-primary">Request a Demo</button>
           <button className="btn-secondary">Learn More</button>
-        </div>
+        </div> */}
       </div>
     </section>
   )
